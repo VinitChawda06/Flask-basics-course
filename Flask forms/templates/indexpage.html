@@ -1,0 +1,19 @@
+<h1>Welcome to cricket survey !!</h1>
+
+<form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.country.label }} {{ form.country }}
+    <br>
+    {{ form.cricket.label }} {{ form.cricket }}
+    <br>
+    {{ form.team.label }} {{ form.team }}
+    <br>
+    {{ form.player.label }} {{ form.player }}
+    <br>
+    Any other comments?
+    <br>
+    {{ form.feedback }}
+    <br>
+    {{ form.submit() }}
+
+</form>

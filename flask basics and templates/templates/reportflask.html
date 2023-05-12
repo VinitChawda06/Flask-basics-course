@@ -1,0 +1,23 @@
+{% extends "basicflask.html" %}
+{% block content %}
+<div class="bg-body-secondary p-5 rounded">
+<p>Let's see how you performed!!</p>
+
+{% if report %}
+<p>Hurray!! Your Username passed all 3 restraints.</p>
+{% else %}
+<ul>
+    {% if not lower %}
+    <li>Username must contain one lowercase letter somewhere.</li>
+    {% endif %}
+    {% if not upper %}
+    <li>Username must contain one uppercase letter somewhere.</li>
+    {% endif %}
+    {% if not num_end %}
+    <li>Username must end with a number.</li>
+    {% endif %}
+</ul>
+
+{% endif %}
+</div>
+{% endblock %}

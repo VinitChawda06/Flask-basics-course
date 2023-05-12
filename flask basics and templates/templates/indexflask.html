@@ -1,0 +1,14 @@
+{% extends "basicflask.html" %}
+{% block content %}
+<div class="bg-body-secondary p-5 rounded">
+    <p>Welcome to Puppy username check!</p>
+    <p>Let's see if your Username is secure! </p>
+    <p>Fill out the below form with a username that has these restraints.</p>
+
+    <form action="{{url_for('report')}}">
+        <label for="Username">Username</label>
+        <input type="text" name="Username">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

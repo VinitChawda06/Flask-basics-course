@@ -1,0 +1,38 @@
+h1{
+    color:blue;
+}
+p{
+    color: rgb(91, 161, 0);
+}
+li{
+    color:#f54242;
+}
+h3{
+    color:rgba(232, 0, 182, 0.562);
+}
+/*
+
+    body{
+    background-color: khaki;
+    background-image: url(https://picsum.photos/id/237/536/354);
+    background-repeat: no-repeat;
+} */
+div{
+    background: khaki;
+
+    /*
+    border : red;
+    border-width: 5px;
+    border-style: solid;
+
+    these three line of border code can be merged and 
+    written in one line as shown below
+    */
+    
+    border: red 5px solid;
+}
+span{
+    background: lightseagreen;
+    color: black;
+    border: saddlebrown 2px dashed;
+}
